@@ -9,6 +9,7 @@
 <script lang="ts">
   import Vue from 'vue'
   import Component from 'vue-class-component'
+  import test from "../common"
   @Component
   export default class Hello extends Vue {
     msg: string = 'this is a typescript project now' 
@@ -16,6 +17,9 @@
     countNumber():void{
       this.count++;
       
+    }
+    mounted(){
+      test.test();
     }
   }
 </script>
