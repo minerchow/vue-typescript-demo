@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <hello></hello>
+    <test></test>
   </div>
 </template>
 
@@ -8,11 +9,13 @@
   import Vue from 'vue'
   import Component from 'vue-class-component'
   import Hello from './components/hello.vue';
+  import test from "./components/test.vue";
   import VueResource from "vue-resource";
   Vue.use(VueResource);
   @Component({
     components: {
-      Hello
+      Hello,
+      test
     }
   })
    export default class App extends Vue {
